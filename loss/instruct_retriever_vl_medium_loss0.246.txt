@@ -1,0 +1,103 @@
+RetrieverVLConfig_medium()
+	batch_size: 16
+	beta1: 0.9
+	beta2: 0.95
+	gpu_num: 3
+	grad_clip: 1.0
+	gradient_accumulation_steps: 4
+	hidden_size: 768
+	img_hidden_size: 2048
+	img_size: 448
+	learning_rate: 0.0001
+	lr_decay_iters: 6000
+	max_iters: 7000
+	min_lr: 1e-05
+	num_epoch: 2
+	num_heads: 12
+	num_layers: 12
+	res_channels: [64, 256, 512, 1024, 2048]
+	res_layers: [3, 4, 6, 3]
+	sequence_length: 1024
+	spacial_dim: 14
+	text_sequence_length: 759
+	vocab_size: 32000
+	warmup_iters: 600
+	weight_decay: 0.1
+
+
+total_params: 140.66M, text_params: 109.81M, image_params: 30.86M
+total epoch: 2, sample nums: 619255, total iter_num: 6450
+step 100, loss 0.422, lr: 0.0000165, consume 479.12s
+step 200, loss 0.305, lr: 0.0000332, consume 354.41s
+step 300, loss 0.288, lr: 0.0000498, consume 355.44s
+step 400, loss 0.286, lr: 0.0000665, consume 355.02s
+step 500, loss 0.278, lr: 0.0000832, consume 354.60s
+step 600, loss 0.280, lr: 0.0000998, consume 354.90s
+step 700, loss 0.280, lr: 0.0000999, consume 354.96s
+step 800, loss 0.273, lr: 0.0000997, consume 353.68s
+step 900, loss 0.274, lr: 0.0000993, consume 354.02s
+step 1000, loss 0.275, lr: 0.0000988, consume 608.16s
+Premature end of JPEG file
+step 1100, loss 0.270, lr: 0.0000981, consume 359.06s
+step 1200, loss 0.274, lr: 0.0000973, consume 358.11s
+step 1300, loss 0.261, lr: 0.0000963, consume 358.46s
+Premature end of JPEG file
+step 1400, loss 0.273, lr: 0.0000952, consume 359.33s
+step 1500, loss 0.267, lr: 0.0000940, consume 358.84s
+step 1600, loss 0.266, lr: 0.0000926, consume 358.76s
+step 1700, loss 0.259, lr: 0.0000911, consume 358.99s
+Premature end of JPEG file
+step 1800, loss 0.262, lr: 0.0000895, consume 357.69s
+step 1900, loss 0.263, lr: 0.0000877, consume 357.09s
+step 2000, loss 0.259, lr: 0.0000859, consume 357.68s
+step 2100, loss 0.260, lr: 0.0000839, consume 357.84s
+step 2200, loss 0.259, lr: 0.0000819, consume 365.25s
+step 2300, loss 0.260, lr: 0.0000797, consume 357.33s
+step 2400, loss 0.259, lr: 0.0000775, consume 358.31s
+step 2500, loss 0.259, lr: 0.0000752, consume 358.97s
+step 2600, loss 0.256, lr: 0.0000728, consume 359.63s
+step 2700, loss 0.261, lr: 0.0000704, consume 361.38s
+step 2800, loss 0.258, lr: 0.0000679, consume 358.75s
+step 2900, loss 0.259, lr: 0.0000654, consume 360.58s
+step 3000, loss 0.253, lr: 0.0000628, consume 359.68s
+step 3100, loss 0.253, lr: 0.0000603, consume 358.96s
+step 3200, loss 0.250, lr: 0.0000576, consume 357.85s
+    llava valid loss: 0.255, consume: 231.778s
+epoch: 0, consume: 12149.888s
+step 3300, loss 0.237, lr: 0.0000550, consume 442.73s
+step 3400, loss 0.240, lr: 0.0000524, consume 361.64s
+Premature end of JPEG file
+step 3500, loss 0.239, lr: 0.0000498, consume 355.45s
+step 3600, loss 0.241, lr: 0.0000472, consume 360.03s
+step 3700, loss 0.242, lr: 0.0000446, consume 357.53s
+step 3800, loss 0.238, lr: 0.0000421, consume 356.66s
+step 3900, loss 0.240, lr: 0.0000396, consume 355.35s
+step 4000, loss 0.238, lr: 0.0000372, consume 356.15s
+step 4100, loss 0.235, lr: 0.0000348, consume 356.08s
+step 4200, loss 0.239, lr: 0.0000325, consume 356.85s
+step 4300, loss 0.238, lr: 0.0000303, consume 355.61s
+step 4400, loss 0.239, lr: 0.0000281, consume 355.70s
+step 4500, loss 0.234, lr: 0.0000261, consume 354.82s
+step 4600, loss 0.237, lr: 0.0000241, consume 355.28s
+step 4700, loss 0.235, lr: 0.0000223, consume 356.08s
+Premature end of JPEG file
+step 4800, loss 0.235, lr: 0.0000205, consume 354.55s
+step 4900, loss 0.237, lr: 0.0000189, consume 355.32s
+step 5000, loss 0.236, lr: 0.0000174, consume 355.52s
+step 5100, loss 0.233, lr: 0.0000160, consume 355.32s
+step 5200, loss 0.237, lr: 0.0000148, consume 354.91s
+step 5300, loss 0.236, lr: 0.0000137, consume 355.72s
+step 5400, loss 0.236, lr: 0.0000127, consume 354.74s
+Premature end of JPEG file
+step 5500, loss 0.227, lr: 0.0000119, consume 355.01s
+step 5600, loss 0.231, lr: 0.0000112, consume 355.58s
+step 5700, loss 0.232, lr: 0.0000107, consume 355.23s
+step 5800, loss 0.235, lr: 0.0000103, consume 354.88s
+step 5900, loss 0.230, lr: 0.0000101, consume 355.51s
+step 6000, loss 0.232, lr: 0.0000100, consume 354.83s
+step 6100, loss 0.230, lr: 0.0000100, consume 482.59s
+step 6200, loss 0.232, lr: 0.0000100, consume 357.44s
+step 6300, loss 0.233, lr: 0.0000100, consume 358.20s
+step 6400, loss 0.229, lr: 0.0000100, consume 358.13s
+    llava valid loss: 0.246, consume: 217.461s
+epoch: 1, consume: 12011.586s

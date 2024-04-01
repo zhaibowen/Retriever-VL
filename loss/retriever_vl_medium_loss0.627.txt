@@ -1,0 +1,154 @@
+RetrieverVLConfig_medium()
+	batch_size: 32
+	beta1: 0.9
+	beta2: 0.95
+	gpu_num: 3
+	grad_clip: 1.0
+	gradient_accumulation_steps: 2
+	hidden_size: 768
+	img_hidden_size: 2048
+	img_size: 448
+	learning_rate: 0.0006
+	lr_decay_iters: 11000
+	max_iters: 12000
+	min_lr: 6e-05
+	num_epoch: 2
+	num_heads: 12
+	num_layers: 12
+	res_channels: [64, 256, 512, 1024, 2048]
+	res_layers: [3, 4, 6, 3]
+	sequence_length: 247
+	spacial_dim: 14
+	text_sequence_length: 50
+	vocab_size: 32000
+	warmup_iters: 800
+	weight_decay: 0.1
+
+
+total_params: 141.07M, text_params: 109.81M, image_params: 31.26M
+total epoch: 2, sample nums: 1144881, total iter_num: 11925
+step 100, loss 3.358, lr: 0.0000742, consume 333.44s
+step 200, loss 1.138, lr: 0.0001492, consume 275.34s
+step 300, loss 1.006, lr: 0.0002242, consume 273.77s
+step 400, loss 0.976, lr: 0.0002992, consume 272.48s
+step 500, loss 0.966, lr: 0.0003743, consume 272.73s
+step 600, loss 0.944, lr: 0.0004492, consume 274.84s
+step 700, loss 0.948, lr: 0.0005242, consume 273.28s
+step 800, loss 0.948, lr: 0.0005992, consume 273.01s
+step 900, loss 0.944, lr: 0.0005999, consume 272.73s
+step 1000, loss 0.937, lr: 0.0005995, consume 272.78s
+step 1100, loss 0.941, lr: 0.0005989, consume 272.87s
+step 1200, loss 0.931, lr: 0.0005980, consume 271.98s
+step 1300, loss 0.925, lr: 0.0005968, consume 272.50s
+step 1400, loss 0.926, lr: 0.0005954, consume 271.32s
+step 1500, loss 0.911, lr: 0.0005938, consume 272.45s
+step 1600, loss 0.918, lr: 0.0005919, consume 272.61s
+step 1700, loss 0.904, lr: 0.0005897, consume 272.13s
+step 1800, loss 0.921, lr: 0.0005873, consume 274.27s
+step 1900, loss 0.915, lr: 0.0005847, consume 271.93s
+step 2000, loss 0.912, lr: 0.0005818, consume 272.11s
+step 2100, loss 0.916, lr: 0.0005787, consume 273.15s
+step 2200, loss 0.917, lr: 0.0005753, consume 271.53s
+step 2300, loss 0.913, lr: 0.0005717, consume 270.31s
+step 2400, loss 0.898, lr: 0.0005679, consume 274.18s
+step 2500, loss 0.908, lr: 0.0005639, consume 272.44s
+step 2600, loss 0.899, lr: 0.0005596, consume 273.03s
+step 2700, loss 0.900, lr: 0.0005551, consume 273.22s
+step 2800, loss 0.886, lr: 0.0005504, consume 271.65s
+step 2900, loss 0.893, lr: 0.0005455, consume 272.62s
+step 3000, loss 0.891, lr: 0.0005404, consume 272.69s
+step 3100, loss 0.888, lr: 0.0005351, consume 272.17s
+step 3200, loss 0.896, lr: 0.0005296, consume 272.80s
+step 3300, loss 0.894, lr: 0.0005239, consume 271.33s
+step 3400, loss 0.883, lr: 0.0005180, consume 274.78s
+step 3500, loss 0.887, lr: 0.0005120, consume 274.74s
+step 3600, loss 0.885, lr: 0.0005057, consume 273.38s
+step 3700, loss 0.891, lr: 0.0004993, consume 275.75s
+step 3800, loss 0.884, lr: 0.0004928, consume 274.45s
+step 3900, loss 0.893, lr: 0.0004861, consume 275.25s
+step 4000, loss 0.877, lr: 0.0004792, consume 274.74s
+step 4100, loss 0.884, lr: 0.0004722, consume 274.55s
+step 4200, loss 0.881, lr: 0.0004651, consume 274.88s
+step 4300, loss 0.881, lr: 0.0004578, consume 274.82s
+step 4400, loss 0.891, lr: 0.0004504, consume 273.84s
+step 4500, loss 0.882, lr: 0.0004429, consume 274.80s
+step 4600, loss 0.885, lr: 0.0004353, consume 274.30s
+step 4700, loss 0.871, lr: 0.0004276, consume 273.45s
+step 4800, loss 0.874, lr: 0.0004198, consume 274.24s
+step 4900, loss 0.865, lr: 0.0004119, consume 273.60s
+step 5000, loss 0.878, lr: 0.0004040, consume 273.57s
+step 5100, loss 0.864, lr: 0.0003959, consume 273.30s
+step 5200, loss 0.875, lr: 0.0003878, consume 273.55s
+step 5300, loss 0.871, lr: 0.0003797, consume 273.52s
+step 5400, loss 0.865, lr: 0.0003715, consume 273.86s
+step 5500, loss 0.867, lr: 0.0003633, consume 273.98s
+step 5600, loss 0.875, lr: 0.0003550, consume 274.50s
+step 5700, loss 0.871, lr: 0.0003467, consume 275.42s
+step 5800, loss 0.855, lr: 0.0003384, consume 274.25s
+step 5900, loss 0.869, lr: 0.0003301, consume 273.30s
+    coco valid loss: 0.656, consume: 381.112s
+    llava valid loss: 1.088, consume: 78.244s
+epoch: 0, consume: 16827.096s
+step 6000, loss 0.841, lr: 0.0003218, consume 156.22s
+step 6100, loss 0.854, lr: 0.0003135, consume 277.48s
+step 6200, loss 0.859, lr: 0.0003052, consume 278.59s
+step 6300, loss 0.852, lr: 0.0002969, consume 277.00s
+step 6400, loss 0.854, lr: 0.0002887, consume 276.88s
+step 6500, loss 0.848, lr: 0.0002805, consume 276.27s
+step 6600, loss 0.857, lr: 0.0002723, consume 277.26s
+step 6700, loss 0.850, lr: 0.0002642, consume 276.31s
+step 6800, loss 0.857, lr: 0.0002562, consume 275.95s
+step 6900, loss 0.839, lr: 0.0002482, consume 277.66s
+step 7000, loss 0.845, lr: 0.0002403, consume 276.18s
+step 7100, loss 0.847, lr: 0.0002325, consume 276.02s
+step 7200, loss 0.851, lr: 0.0002248, consume 284.92s
+step 7300, loss 0.851, lr: 0.0002172, consume 289.13s
+step 7400, loss 0.843, lr: 0.0002097, consume 286.95s
+step 7500, loss 0.843, lr: 0.0002023, consume 287.54s
+step 7600, loss 0.849, lr: 0.0001951, consume 292.15s
+step 7700, loss 0.845, lr: 0.0001879, consume 291.21s
+step 7800, loss 0.849, lr: 0.0001809, consume 287.87s
+step 7900, loss 0.834, lr: 0.0001741, consume 292.51s
+step 8000, loss 0.847, lr: 0.0001674, consume 291.48s
+step 8100, loss 0.836, lr: 0.0001608, consume 289.95s
+step 8200, loss 0.839, lr: 0.0001544, consume 288.96s
+step 8300, loss 0.843, lr: 0.0001482, consume 290.14s
+step 8400, loss 0.838, lr: 0.0001421, consume 283.55s
+step 8500, loss 0.837, lr: 0.0001362, consume 283.91s
+step 8600, loss 0.833, lr: 0.0001305, consume 307.59s
+step 8700, loss 0.837, lr: 0.0001250, consume 286.85s
+step 8800, loss 0.838, lr: 0.0001197, consume 286.92s
+step 8900, loss 0.841, lr: 0.0001146, consume 289.15s
+step 9000, loss 0.843, lr: 0.0001097, consume 286.49s
+step 9100, loss 0.852, lr: 0.0001050, consume 290.00s
+step 9200, loss 0.846, lr: 0.0001005, consume 290.96s
+step 9300, loss 0.840, lr: 0.0000962, consume 289.05s
+step 9400, loss 0.850, lr: 0.0000922, consume 289.28s
+step 9500, loss 0.833, lr: 0.0000883, consume 291.06s
+step 9600, loss 0.837, lr: 0.0000847, consume 293.86s
+step 9700, loss 0.824, lr: 0.0000814, consume 275.87s
+step 9800, loss 0.831, lr: 0.0000783, consume 276.04s
+step 9900, loss 0.824, lr: 0.0000754, consume 275.91s
+step 10000, loss 0.835, lr: 0.0000727, consume 275.80s
+step 10100, loss 0.829, lr: 0.0000703, consume 276.34s
+step 10200, loss 0.833, lr: 0.0000682, consume 275.36s
+step 10300, loss 0.819, lr: 0.0000663, consume 276.42s
+step 10400, loss 0.827, lr: 0.0000646, consume 275.48s
+step 10500, loss 0.828, lr: 0.0000632, consume 275.40s
+step 10600, loss 0.834, lr: 0.0000621, consume 272.92s
+step 10700, loss 0.827, lr: 0.0000612, consume 272.97s
+step 10800, loss 0.820, lr: 0.0000605, consume 272.79s
+step 10900, loss 0.825, lr: 0.0000601, consume 273.18s
+step 11000, loss 0.832, lr: 0.0000600, consume 273.52s
+step 11100, loss 0.835, lr: 0.0000600, consume 272.02s
+step 11200, loss 0.829, lr: 0.0000600, consume 272.73s
+step 11300, loss 0.824, lr: 0.0000600, consume 276.59s
+step 11400, loss 0.832, lr: 0.0000600, consume 272.55s
+step 11500, loss 0.822, lr: 0.0000600, consume 273.84s
+step 11600, loss 0.827, lr: 0.0000600, consume 273.60s
+step 11700, loss 0.825, lr: 0.0000600, consume 275.32s
+step 11800, loss 0.820, lr: 0.0000600, consume 274.82s
+step 11900, loss 0.824, lr: 0.0000600, consume 273.17s
+    coco valid loss: 0.627, consume: 361.174s
+    llava valid loss: 1.052, consume: 75.780s
+epoch: 1, consume: 17264.643s
